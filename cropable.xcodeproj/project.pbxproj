@@ -16,6 +16,9 @@
 		3F679C6E2A752409007D5CF6 /* cropableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F679C6D2A752409007D5CF6 /* cropableTests.swift */; };
 		3F679C782A752409007D5CF6 /* cropableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F679C772A752409007D5CF6 /* cropableUITests.swift */; };
 		3F679C7A2A752409007D5CF6 /* cropableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F679C792A752409007D5CF6 /* cropableUITestsLaunchTests.swift */; };
+		81D7EE363D7CCA6C013C8358 /* Pods_cropable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FC492492D930CECFD057C3 /* Pods_cropable.framework */; };
+		B1AC3C52F1CBD38045E3CE2B /* Pods_cropableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9C847927353DE56C974FE7 /* Pods_cropableTests.framework */; };
+		D6DE2C85CE8FC2B06EEEC00C /* Pods_cropable_cropableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064BBE99419415A442F8A6FA /* Pods_cropable_cropableUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		064BBE99419415A442F8A6FA /* Pods_cropable_cropableUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cropable_cropableUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F679C532A752408007D5CF6 /* cropable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cropable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F679C562A752408007D5CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F679C582A752408007D5CF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 		3F679C732A752409007D5CF6 /* cropableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cropableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F679C772A752409007D5CF6 /* cropableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cropableUITests.swift; sourceTree = "<group>"; };
 		3F679C792A752409007D5CF6 /* cropableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cropableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5393033652DE463654516CFB /* Pods-cropable-cropableUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cropable-cropableUITests.release.xcconfig"; path = "Target Support Files/Pods-cropable-cropableUITests/Pods-cropable-cropableUITests.release.xcconfig"; sourceTree = "<group>"; };
+		718CB04BB3EE8B141CDA8F86 /* Pods-cropable-cropableUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cropable-cropableUITests.debug.xcconfig"; path = "Target Support Files/Pods-cropable-cropableUITests/Pods-cropable-cropableUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		73DE58CA49CA96761890744C /* Pods-cropable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cropable.debug.xcconfig"; path = "Target Support Files/Pods-cropable/Pods-cropable.debug.xcconfig"; sourceTree = "<group>"; };
+		84FC492492D930CECFD057C3 /* Pods_cropable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cropable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AFB07A357CB032F971E3343 /* Pods-cropableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cropableTests.release.xcconfig"; path = "Target Support Files/Pods-cropableTests/Pods-cropableTests.release.xcconfig"; sourceTree = "<group>"; };
+		C62E8FB30AA0ACF864CC8411 /* Pods-cropable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cropable.release.xcconfig"; path = "Target Support Files/Pods-cropable/Pods-cropable.release.xcconfig"; sourceTree = "<group>"; };
+		CEEC7F71A3903EDB90B2AF25 /* Pods-cropableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cropableTests.debug.xcconfig"; path = "Target Support Files/Pods-cropableTests/Pods-cropableTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC9C847927353DE56C974FE7 /* Pods_cropableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cropableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81D7EE363D7CCA6C013C8358 /* Pods_cropable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1AC3C52F1CBD38045E3CE2B /* Pods_cropableTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DE2C85CE8FC2B06EEEC00C /* Pods_cropable_cropableUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				3F679C6C2A752409007D5CF6 /* cropableTests */,
 				3F679C762A752409007D5CF6 /* cropableUITests */,
 				3F679C542A752408007D5CF6 /* Products */,
+				B8D60DACA1AD9F007199D4DE /* Pods */,
+				83617F6255E18C16BACB1434 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +144,30 @@
 			path = cropableUITests;
 			sourceTree = "<group>";
 		};
+		83617F6255E18C16BACB1434 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84FC492492D930CECFD057C3 /* Pods_cropable.framework */,
+				064BBE99419415A442F8A6FA /* Pods_cropable_cropableUITests.framework */,
+				DC9C847927353DE56C974FE7 /* Pods_cropableTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8D60DACA1AD9F007199D4DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73DE58CA49CA96761890744C /* Pods-cropable.debug.xcconfig */,
+				C62E8FB30AA0ACF864CC8411 /* Pods-cropable.release.xcconfig */,
+				718CB04BB3EE8B141CDA8F86 /* Pods-cropable-cropableUITests.debug.xcconfig */,
+				5393033652DE463654516CFB /* Pods-cropable-cropableUITests.release.xcconfig */,
+				CEEC7F71A3903EDB90B2AF25 /* Pods-cropableTests.debug.xcconfig */,
+				8AFB07A357CB032F971E3343 /* Pods-cropableTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F679C7D2A752409007D5CF6 /* Build configuration list for PBXNativeTarget "cropable" */;
 			buildPhases = (
+				9627BEAF66028C07EB82BC39 /* [CP] Check Pods Manifest.lock */,
 				3F679C4F2A752408007D5CF6 /* Sources */,
 				3F679C502A752408007D5CF6 /* Frameworks */,
 				3F679C512A752408007D5CF6 /* Resources */,
+				CD281AF8A7796579532CE099 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F679C802A752409007D5CF6 /* Build configuration list for PBXNativeTarget "cropableTests" */;
 			buildPhases = (
+				C49026D16122B20CA1FEE6E5 /* [CP] Check Pods Manifest.lock */,
 				3F679C652A752409007D5CF6 /* Sources */,
 				3F679C662A752409007D5CF6 /* Frameworks */,
 				3F679C672A752409007D5CF6 /* Resources */,
@@ -169,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F679C832A752409007D5CF6 /* Build configuration list for PBXNativeTarget "cropableUITests" */;
 			buildPhases = (
+				C2992F3B310E852C6350F5F9 /* [CP] Check Pods Manifest.lock */,
 				3F679C6F2A752409007D5CF6 /* Sources */,
 				3F679C702A752409007D5CF6 /* Frameworks */,
 				3F679C712A752409007D5CF6 /* Resources */,
+				57F11FADEAC7AF0FCB7ED4E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57F11FADEAC7AF0FCB7ED4E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cropable-cropableUITests/Pods-cropable-cropableUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cropable-cropableUITests/Pods-cropable-cropableUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cropable-cropableUITests/Pods-cropable-cropableUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9627BEAF66028C07EB82BC39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cropable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2992F3B310E852C6350F5F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cropable-cropableUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C49026D16122B20CA1FEE6E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cropableTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD281AF8A7796579532CE099 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cropable/Pods-cropable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cropable/Pods-cropable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cropable/Pods-cropable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F679C4F2A752408007D5CF6 /* Sources */ = {
@@ -432,6 +581,7 @@
 		};
 		3F679C7E2A752409007D5CF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DE58CA49CA96761890744C /* Pods-cropable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +609,7 @@
 		};
 		3F679C7F2A752409007D5CF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C62E8FB30AA0ACF864CC8411 /* Pods-cropable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +637,7 @@
 		};
 		3F679C812A752409007D5CF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEEC7F71A3903EDB90B2AF25 /* Pods-cropableTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -505,6 +657,7 @@
 		};
 		3F679C822A752409007D5CF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AFB07A357CB032F971E3343 /* Pods-cropableTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +677,7 @@
 		};
 		3F679C842A752409007D5CF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 718CB04BB3EE8B141CDA8F86 /* Pods-cropable-cropableUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +695,7 @@
 		};
 		3F679C852A752409007D5CF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5393033652DE463654516CFB /* Pods-cropable-cropableUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
