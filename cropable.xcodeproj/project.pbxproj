@@ -16,6 +16,25 @@
 		3F679C6E2A752409007D5CF6 /* cropableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F679C6D2A752409007D5CF6 /* cropableTests.swift */; };
 		3F679C782A752409007D5CF6 /* cropableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F679C772A752409007D5CF6 /* cropableUITests.swift */; };
 		3F679C7A2A752409007D5CF6 /* cropableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F679C792A752409007D5CF6 /* cropableUITestsLaunchTests.swift */; };
+		3FE6893D2A765FAD00A71050 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6892C2A765FAD00A71050 /* Array+Extensions.swift */; };
+		3FE6893E2A765FAD00A71050 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6892D2A765FAD00A71050 /* Math.swift */; };
+		3FE6893F2A765FAD00A71050 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6892E2A765FAD00A71050 /* UIImage+CVPixelBuffer.swift */; };
+		3FE689402A765FAD00A71050 /* Predictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6892F2A765FAD00A71050 /* Predictions.swift */; };
+		3FE689412A765FAD00A71050 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE689302A765FAD00A71050 /* UIImage+Extensions.swift */; };
+		3FE689422A765FAD00A71050 /* CGImagePropertyOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE689312A765FAD00A71050 /* CGImagePropertyOrientation.swift */; };
+		3FE689432A765FAD00A71050 /* UIImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE689322A765FAD00A71050 /* UIImage+RawBytes.swift */; };
+		3FE689442A765FAD00A71050 /* MLMultiArray+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE689332A765FAD00A71050 /* MLMultiArray+Helpers.swift */; };
+		3FE689452A765FAD00A71050 /* MLModel+Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE689342A765FAD00A71050 /* MLModel+Images.swift */; };
+		3FE689462A765FAD00A71050 /* CoreML+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE689352A765FAD00A71050 /* CoreML+Combine.swift */; };
+		3FE689472A765FAD00A71050 /* CVPixelBuffer+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE689362A765FAD00A71050 /* CVPixelBuffer+Create.swift */; };
+		3FE689482A765FAD00A71050 /* CGImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE689372A765FAD00A71050 /* CGImage+CVPixelBuffer.swift */; };
+		3FE689492A765FAD00A71050 /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE689382A765FAD00A71050 /* NonMaxSuppression.swift */; };
+		3FE6894A2A765FAD00A71050 /* CGImage+RawBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE689392A765FAD00A71050 /* CGImage+RawBytes.swift */; };
+		3FE6894B2A765FAD00A71050 /* MLMultiArray+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6893A2A765FAD00A71050 /* MLMultiArray+Image.swift */; };
+		3FE6894C2A765FAD00A71050 /* CVPixelBuffer+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6893B2A765FAD00A71050 /* CVPixelBuffer+Resize.swift */; };
+		3FE6894D2A765FAD00A71050 /* CVPixelBuffer+Rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6893C2A765FAD00A71050 /* CVPixelBuffer+Rotate.swift */; };
+		3FE6894F2A76679F00A71050 /* CropImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE6894E2A76679F00A71050 /* CropImageHelper.swift */; };
+		3FE689512A76AB1100A71050 /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 3FE689502A76AB1100A71050 /* DeepLabV3.mlmodel */; };
 		81D7EE363D7CCA6C013C8358 /* Pods_cropable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84FC492492D930CECFD057C3 /* Pods_cropable.framework */; };
 		B1AC3C52F1CBD38045E3CE2B /* Pods_cropableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9C847927353DE56C974FE7 /* Pods_cropableTests.framework */; };
 		D6DE2C85CE8FC2B06EEEC00C /* Pods_cropable_cropableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064BBE99419415A442F8A6FA /* Pods_cropable_cropableUITests.framework */; };
@@ -53,6 +72,25 @@
 		3F679C732A752409007D5CF6 /* cropableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cropableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F679C772A752409007D5CF6 /* cropableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cropableUITests.swift; sourceTree = "<group>"; };
 		3F679C792A752409007D5CF6 /* cropableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cropableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3FE6892C2A765FAD00A71050 /* Array+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		3FE6892D2A765FAD00A71050 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		3FE6892E2A765FAD00A71050 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		3FE6892F2A765FAD00A71050 /* Predictions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Predictions.swift; sourceTree = "<group>"; };
+		3FE689302A765FAD00A71050 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		3FE689312A765FAD00A71050 /* CGImagePropertyOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImagePropertyOrientation.swift; sourceTree = "<group>"; };
+		3FE689322A765FAD00A71050 /* UIImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+RawBytes.swift"; sourceTree = "<group>"; };
+		3FE689332A765FAD00A71050 /* MLMultiArray+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Helpers.swift"; sourceTree = "<group>"; };
+		3FE689342A765FAD00A71050 /* MLModel+Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLModel+Images.swift"; sourceTree = "<group>"; };
+		3FE689352A765FAD00A71050 /* CoreML+Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreML+Combine.swift"; sourceTree = "<group>"; };
+		3FE689362A765FAD00A71050 /* CVPixelBuffer+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Create.swift"; sourceTree = "<group>"; };
+		3FE689372A765FAD00A71050 /* CGImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		3FE689382A765FAD00A71050 /* NonMaxSuppression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
+		3FE689392A765FAD00A71050 /* CGImage+RawBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+RawBytes.swift"; sourceTree = "<group>"; };
+		3FE6893A2A765FAD00A71050 /* MLMultiArray+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MLMultiArray+Image.swift"; sourceTree = "<group>"; };
+		3FE6893B2A765FAD00A71050 /* CVPixelBuffer+Resize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Resize.swift"; sourceTree = "<group>"; };
+		3FE6893C2A765FAD00A71050 /* CVPixelBuffer+Rotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CVPixelBuffer+Rotate.swift"; sourceTree = "<group>"; };
+		3FE6894E2A76679F00A71050 /* CropImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropImageHelper.swift; sourceTree = "<group>"; };
+		3FE689502A76AB1100A71050 /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = SOURCE_ROOT; };
 		5393033652DE463654516CFB /* Pods-cropable-cropableUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cropable-cropableUITests.release.xcconfig"; path = "Target Support Files/Pods-cropable-cropableUITests/Pods-cropable-cropableUITests.release.xcconfig"; sourceTree = "<group>"; };
 		718CB04BB3EE8B141CDA8F86 /* Pods-cropable-cropableUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cropable-cropableUITests.debug.xcconfig"; path = "Target Support Files/Pods-cropable-cropableUITests/Pods-cropable-cropableUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		73DE58CA49CA96761890744C /* Pods-cropable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cropable.debug.xcconfig"; path = "Target Support Files/Pods-cropable/Pods-cropable.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,9 +154,12 @@
 		3F679C552A752408007D5CF6 /* cropable */ = {
 			isa = PBXGroup;
 			children = (
+				3FE689502A76AB1100A71050 /* DeepLabV3.mlmodel */,
+				3FE6892B2A765FAD00A71050 /* CoreMLHelpers */,
 				3F679C562A752408007D5CF6 /* AppDelegate.swift */,
 				3F679C582A752408007D5CF6 /* SceneDelegate.swift */,
 				3F679C5A2A752408007D5CF6 /* ViewController.swift */,
+				3FE6894E2A76679F00A71050 /* CropImageHelper.swift */,
 				3F679C5C2A752408007D5CF6 /* Main.storyboard */,
 				3F679C5F2A752409007D5CF6 /* Assets.xcassets */,
 				3F679C612A752409007D5CF6 /* LaunchScreen.storyboard */,
@@ -144,6 +185,31 @@
 			path = cropableUITests;
 			sourceTree = "<group>";
 		};
+		3FE6892B2A765FAD00A71050 /* CoreMLHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				3FE6892C2A765FAD00A71050 /* Array+Extensions.swift */,
+				3FE6892D2A765FAD00A71050 /* Math.swift */,
+				3FE6892E2A765FAD00A71050 /* UIImage+CVPixelBuffer.swift */,
+				3FE6892F2A765FAD00A71050 /* Predictions.swift */,
+				3FE689302A765FAD00A71050 /* UIImage+Extensions.swift */,
+				3FE689312A765FAD00A71050 /* CGImagePropertyOrientation.swift */,
+				3FE689322A765FAD00A71050 /* UIImage+RawBytes.swift */,
+				3FE689332A765FAD00A71050 /* MLMultiArray+Helpers.swift */,
+				3FE689342A765FAD00A71050 /* MLModel+Images.swift */,
+				3FE689352A765FAD00A71050 /* CoreML+Combine.swift */,
+				3FE689362A765FAD00A71050 /* CVPixelBuffer+Create.swift */,
+				3FE689372A765FAD00A71050 /* CGImage+CVPixelBuffer.swift */,
+				3FE689382A765FAD00A71050 /* NonMaxSuppression.swift */,
+				3FE689392A765FAD00A71050 /* CGImage+RawBytes.swift */,
+				3FE6893A2A765FAD00A71050 /* MLMultiArray+Image.swift */,
+				3FE6893B2A765FAD00A71050 /* CVPixelBuffer+Resize.swift */,
+				3FE6893C2A765FAD00A71050 /* CVPixelBuffer+Rotate.swift */,
+			);
+			name = CoreMLHelpers;
+			path = "../../../Downloads/CoreMLHelpers-master/CoreMLHelpers";
+			sourceTree = "<group>";
+		};
 		83617F6255E18C16BACB1434 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +230,6 @@
 				CEEC7F71A3903EDB90B2AF25 /* Pods-cropableTests.debug.xcconfig */,
 				8AFB07A357CB032F971E3343 /* Pods-cropableTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,9 +472,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE689472A765FAD00A71050 /* CVPixelBuffer+Create.swift in Sources */,
+				3FE689492A765FAD00A71050 /* NonMaxSuppression.swift in Sources */,
+				3FE689402A765FAD00A71050 /* Predictions.swift in Sources */,
+				3FE6894C2A765FAD00A71050 /* CVPixelBuffer+Resize.swift in Sources */,
+				3FE6894B2A765FAD00A71050 /* MLMultiArray+Image.swift in Sources */,
+				3FE689512A76AB1100A71050 /* DeepLabV3.mlmodel in Sources */,
 				3F679C5B2A752408007D5CF6 /* ViewController.swift in Sources */,
+				3FE689482A765FAD00A71050 /* CGImage+CVPixelBuffer.swift in Sources */,
+				3FE6893D2A765FAD00A71050 /* Array+Extensions.swift in Sources */,
 				3F679C572A752408007D5CF6 /* AppDelegate.swift in Sources */,
+				3FE689432A765FAD00A71050 /* UIImage+RawBytes.swift in Sources */,
 				3F679C592A752408007D5CF6 /* SceneDelegate.swift in Sources */,
+				3FE6893F2A765FAD00A71050 /* UIImage+CVPixelBuffer.swift in Sources */,
+				3FE689422A765FAD00A71050 /* CGImagePropertyOrientation.swift in Sources */,
+				3FE6894F2A76679F00A71050 /* CropImageHelper.swift in Sources */,
+				3FE689412A765FAD00A71050 /* UIImage+Extensions.swift in Sources */,
+				3FE689452A765FAD00A71050 /* MLModel+Images.swift in Sources */,
+				3FE6894A2A765FAD00A71050 /* CGImage+RawBytes.swift in Sources */,
+				3FE6894D2A765FAD00A71050 /* CVPixelBuffer+Rotate.swift in Sources */,
+				3FE689462A765FAD00A71050 /* CoreML+Combine.swift in Sources */,
+				3FE689442A765FAD00A71050 /* MLMultiArray+Helpers.swift in Sources */,
+				3FE6893E2A765FAD00A71050 /* Math.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +671,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = cropable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -594,6 +679,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -615,6 +701,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = cropable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -622,6 +709,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
