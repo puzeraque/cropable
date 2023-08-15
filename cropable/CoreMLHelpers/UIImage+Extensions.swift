@@ -20,9 +20,8 @@
   IN THE SOFTWARE.
 */
 
-#if canImport(UIKit)
-
 import UIKit
+import CoreML
 
 extension UIImage {
   /**
@@ -34,7 +33,7 @@ extension UIImage {
     let format = UIGraphicsImageRendererFormat.default()
     format.scale = scale
     let renderer = UIGraphicsImageRenderer(size: newSize, format: format)
-    let imageView = renderer.imageView { _ in
+    let imageView = renderer.image { _ in
       draw(in: CGRect(origin: .zero, size: newSize))
     }
     return imageView
@@ -57,16 +56,14 @@ extension UIImage {
     newSize.width = floor(newSize.width)
     newSize.height = floor(newSize.height)
 
-    return UIGraphicsImageRenderer(size: newSize).imageView { rendererContext in
+    return UIGraphicsImageRenderer(size: newSize).image { rendererContext in
       let context = rendererContext.cgContext
       context.setFillColor(UIColor.black.cgColor)
       context.fill(CGRect(origin: .zero, size: newSize))
       context.translateBy(x: newSize.width / 2, y: newSize.height / 2)
       context.rotate(by: radians)
-      let origin = CGPoint(x: -size.width / 2, y: -size.height / 2)
-      draw(in: CGRect(origin: origin, size: size))
+        let origin = CGPoint(x: -self.size.width / 2, y: -self.size.height / 2)
+        self.draw(in: CGRect(origin: origin, size: self.size))
     }
   }
 }
-
-#endif

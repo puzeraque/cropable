@@ -295,8 +295,6 @@ public func createCGImage(fromFloatArray features: MLMultiArray,
   }
 }
 
-#if canImport(UIKit)
-
 import UIKit
 
 extension MLMultiArray {
@@ -315,5 +313,3 @@ public func createUIImage(fromFloatArray features: MLMultiArray,
   let cgImg = createCGImage(fromFloatArray: features, min: min, max: max)
   return cgImg.map { UIImage(cgImage: $0) }
 }
-
-#endif

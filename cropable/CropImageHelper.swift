@@ -46,7 +46,7 @@ class CropImageHelper {
             guard let image = self.image else { return }
             if let observations = request.results as? [VNCoreMLFeatureValueObservation],
                let segmentationMap = observations.first?.featureValue.multiArrayValue {
-                let segmentationMask = segmentationMap.image(min: 0, max: 1)
+                let segmentationMask = segmentationMap.imageView(min: 0, max: 1)
 
                 self.outputImage = segmentationMask?.resized(to: image.size)
                 self.outputImage = self.maskInputImage()

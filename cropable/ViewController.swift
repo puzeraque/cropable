@@ -162,7 +162,7 @@ extension ViewController: AVCapturePhotoCaptureDelegate {
                 return
             }
             finalImage = image
-            self.image = image
+            self.imageView.image = image
         }
     }
 }
