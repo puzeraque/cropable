@@ -4,7 +4,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
-    private let image = UIImageView()
+    private let imageView = UIImageView()
     private let helper = CropImageHelper(image: UIImage(named: "photo"))
     private let previewView = UIView()
     private let photoButton = UIButton()
@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     private var videoPreviewLayer: AVCaptureVideoPreviewLayer!
     private var captureDevice: AVCaptureDevice?
     private var finalImage: UIImage?
+    private var firstImage: UIImage?
 
     var isAuthorized: Bool {
         get async {
@@ -61,9 +62,10 @@ class ViewController: UIViewController {
         }
         previewView.layer.cornerRadius = 10
         previewView.clipsToBounds = true
-        previewView.addSubview(image)
-        image.contentMode = .scaleAspectFill
-        image.snp.makeConstraints { make in
+        previewView.addSubview(imageView)
+        imageView.alpha = 0.4
+        imageView.contentMode = .scaleAspectFill
+        imageView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
 
@@ -71,11 +73,13 @@ class ViewController: UIViewController {
         photoButton.backgroundColor = .black
         photoButton.layer.cornerRadius = 36
 
-        helper.start()
-        helper.onImageCompleted = { image in
-            self.image.image = image
-            self.image.alpha = 1
-        }
+//        helper.start()
+//        helper.onImageCompleted = { image in
+//            self.image.image = image
+//            self.image.alpha = 1
+//        }
+
+        photoButton.addTarget(self, action: #selector(photoTapped), for: .touchUpInside)
     }
 
     override func viewDidLayoutSubviews() {
@@ -127,6 +131,38 @@ class ViewController: UIViewController {
         previewView.layer.addSublayer(videoPreviewLayer)
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             self?.captureSession.startRunning()
+        }
+    }
+
+    @objc
+    private func photoTapped() {
+        let photoSettings: AVCapturePhotoSettings
+        if stillImageOutput.availablePhotoCodecTypes.contains(.hevc) {
+            photoSettings = AVCapturePhotoSettings(
+                format: [AVVideoCodecKey: AVVideoCodecType.hevc]
+            )
+        } else {
+            photoSettings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
+        }
+        stillImageOutput.capturePhoto(with: photoSettings, delegate: self)
+    }
+}
+
+extension ViewController: AVCapturePhotoCaptureDelegate {
+
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+        DispatchQueue.main.async { [weak self] in
+            guard
+                let self = self,
+                let imageData = photo.fileDataRepresentation(),
+                let image = UIImage(data: imageData)
+            else { return }
+            guard firstImage == nil else {
+                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+                return
+            }
+            finalImage = image
+            self.image = image
         }
     }
 }
